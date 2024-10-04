@@ -16,16 +16,7 @@
           "type": "image/png",
           "sizes": "512x512",
           "purpose": "maskable"
-      },
-      {
-        "src": "logoUnand.png",
-        "type": "image/png",
-        "sizes": "72x72"
-    },
-    {
-        "src": "logoUnand.png",
-        "type": "image/png",
-        "sizes": "96x96"
-    }
+      }
+      
   ]
 }
