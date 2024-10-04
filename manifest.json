@@ -1,22 +1,22 @@
 {
-  "name": "kaela",
-  "short_name": "kaee",
-  "start_url": "/",
-  "display":"standalone",
-  "background_color": "#778899",
-  "theme_color": "#000000",
-  "icons": [
-      {
-          "src": "logoUnand.png",
-          "type": "image/png",
-          "sizes": "192x192"
-      },
-      {
-          "src": "logoUnand.png",
-          "type": "image/png",
-          "sizes": "512x512",
-          "purpose": "maskable"
-      }
-      
-  ]
-}
+    "name": "kaela",
+    "short_name": "kaee",
+    "start_url": "/",
+    "display":"standalone",
+    "background_color": "#778899",
+    "theme_color": "#000000",
+    "icons": [
+        {
+            "src": "192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "512.png",
+            "type": "image/png",
+            "sizes": "512x512",
+            "purpose": "maskable"
+        }
+        
+    ]
+  }
