@@ -43,16 +43,29 @@ self.addEventListener('activate', (event) => {
 });
 
 // Fetch event
+// Fetch event
 self.addEventListener('fetch', (event) => {
     console.log('Service Worker: Fetching');
     event.respondWith(
         caches.match(event.request).then(
             (response) => {
+                // Jika ada respons di cache, kembalikan respons tersebut
                 if (response) {
                     return response;
                 }
-                return fetch(event.request).catch(
-                    () => caches.match('offline.html')
+                // Jika tidak ada di cache, lakukan fetch dari jaringan
+                return fetch(event.request).then(
+                    (fetchResponse) => {
+                        return caches.open(cache_name).then(
+                            (cache) => {
+                                // Simpan respons ke dalam cache untuk digunakan di masa mendatang
+                                cache.put(event.request, fetchResponse.clone());
+                                return fetchResponse; // Kembalikan respons asli
+                            }
+                        );
+                    }
+                ).catch(
+                    () => caches.match('offline.html') // Jika fetch gagal, tampilkan halaman offline
                 );
             }
         )
