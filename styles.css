@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgba(133, 209, 167, 0.493);
+    align-items: center;
+
+  }
+  
+  nav {
+      max-width: 1000px;
+      margin: 2px auto;
+      background-color: #2aaecf;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #22efe2;
+    background-color: rgb(104, 201, 228);
+    color: #fff;
+  }
+  
+  nav li {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  nav a {
+    color: #15639ec1;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    color: #ffffffa0;
+  }
+  .center-img {
+    display: flex;
+    justify-content: center; /* Memusatkan secara horizontal */
+    align-items: center; /* Memusatkan secara vertikal */
+    height: 70vh; /* Mengambil tinggi penuh dari viewport */
+}
+
+.img1 {
+    max-width: 20%; /* Gambar akan menyesuaikan lebar layar, tetapi tidak lebih besar dari ukuran aslinya */
+    height: auto;
+}
+
+.centered-paragraph {
+  max-width: 600px;    /* Batasi lebar paragraf */
+  margin: 0 auto;      /* Memusatkan paragraf */
+  text-align: center; /* Merapikan teks kiri dan kanan */
+  margin-bottom: 20px;
+}
+
+  
+  #index.html body {
+    background-color: #39a35ec8;
+    justify-content: center; /* Memusatkan secara horizontal */
+    align-items: center;
+  }
+  
+  #about.html body {
+    background-color: #34ec84e7;
+  }
+  
+  #contact.html body {
+    background-color: #f0f0f0;
+  }
