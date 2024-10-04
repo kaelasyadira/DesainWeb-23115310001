@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="manifest" href="manifest.json">
+
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  
+  <h1>Contact me</h1>
+  <form>
+    <label for="name">Nama:</label>
+    <input type="text" id="name" name="name"><br><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email"><br><br>
+    <label for="kategori">Kategori:</label>
+    <select id="kategori" name="kategori">
+      <option value="pertanyaan">Pertanyaan</option>
+      <option value="saran">Saran</option>
+      <option value="masalah">Masalah</option>
+    </select><br><br>
+    <label for="pesan">Pesan:</label>
+    <textarea id="pesan" name="pesan"></textarea><br><br>
+    <label for="balasan">Ingin menerima balasan?</label>
+    <input type="radio" id="balasan" name="balasan" value="ya"> Ya
+    <input type="radio" id="balasan" name="balasan" value="tidak"> Tidak<br><br>
+    <input type="submit" value="Kirim">
+  </form>
+  <script>
+    document.querySelector('form').addEventListener('submit', function() {
+      alert('Form berhasil dikirim!');
+    });
+  </script>
+  </nav>
+  <button id="installButton" style="display: none;">Install App</button>
+
+</body>
+</html>
